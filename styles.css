@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover{
+    text-shadow: 4px 0px 9px rgba(255, 255, 255, 0.7);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+::placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #343541;
+    display: flex;
+}
+
+@media only screen and (min-width: 800px ) {
+    #output{
+        background-color: rgba(255, 255, 255, 0.347);
+        padding: 3%;
+        border-radius: 20px;
+    }
+    
+    h1 {
+        font-size: 33px;
+        font-weight: 600;
+        padding: 0px 0px;
+    
+    }
+    
+    .side-bar {
+        background-color: #202123;
+        width: 244px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 1vh;
+        width: 100%;
+    
+    }
+    
+    .bottom-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 11px;
+    
+    }
+    
+    input {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        width: 100%;
+        font-size: 20px;
+        padding: 12px 15px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0) 0 54px 55px, 
+        rgba(0, 0, 0, 0.05) 0 -12px 30px,
+         rgba(0, 0, 0, 0.05) 0 4px 6px,
+         rgba(0, 0, 0, 0.05) 0 12px 13px ,
+         rgba(0, 0, 0, 0.09) 0 -3px 5px;
+    }
+    
+    .input-container{
+        width: 100%;
+        max-width: 650px;
+        position: relative;
+    }
+    
+    .input-container #submit{
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+        cursor: pointer;
+    }
+    
+    button {
+        border: solid 0.5px rgba(255,255,255, 0.5);
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    nav {
+        border-top: solid 0.5px rgba(255,255,255, 0.5);
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .history {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .history p {
+        cursor: pointer;
+    }
+    
+    #output {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #output{
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 3%;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 33px;
+        font-weight: 600;
+        padding: 0px 0px;
+    
+    }
+    
+    .side-bar {
+        display: none;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    .bottom-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 11px;
+        width: 80%;
+    
+    }
+    
+    input {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 80%;
+        font-size: 20px;
+        padding: 12px 15px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0) 0 54px 55px, 
+        rgba(0, 0, 0, 0.05) 0 -12px 30px,
+         rgba(0, 0, 0, 0.05) 0 4px 6px,
+         rgba(0, 0, 0, 0.05) 0 12px 13px ,
+         rgba(0, 0, 0, 0.09) 0 -3px 5px;
+    }
+    
+    .input-container{
+        width: 100%;
+        max-width: 650px;
+        position: relative;
+    }
+    
+    .input-container #submit{
+        position: relative;
+        left: 38%;
+        bottom: 37px;
+        cursor: pointer;
+    }
+    
+    button {
+        border: solid 0.5px rgba(255,255,255, 0.5);
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    nav {
+        border-top: solid 0.5px rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        margin: 10px;
+        display: none;
+    }
+    
+    .history {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        display: none;
+    }
+    
+    .history p {
+        cursor: pointer;
+        display: none;
+    }
+    
+    #output {
+        max-width: 80%;
+    }
+}
