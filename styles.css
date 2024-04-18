@@ -198,10 +198,11 @@ body {
     }
     
     .input-container #submit{
-        position: relative;
-        left: 38%;
+       position: relative;
+        left: 80%;
         bottom: 37px;
         cursor: pointer;
+        width: 10%;
     }
     
     button {
