@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amathzzz Chatbot</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <section class="side-bar">
-      <button id="new"><a href="index.html">New Chat</a></button>
-      <div class="history"></div>
-      <nav>
-        <p>STEM 12-Nikola Tesla</p>
-        <br />
-        <p>(SY. 2023-2024)</p>
-      </nav>
-    </section>
-    <section class="main">
-      <h1><a href="home.html">Amathzzz</a></h1>
-      <div class="bottom-section">
-        <div class="input-container">
-          <input type="text" placeholder="Ask Math Questions" />
-          <div id="submit">➢</div>
-        </div>
-        <p class="info">
-          Amathzzz 2024 Version. For Research Purposes. Our Goal is to make an
-          AI assistant tool for your Math inquiries. Your Feedback will Help Us
-          Improve. <a href="home.html">Learn More About Us </a>
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amathzzz Chatbot | AI Math Assistant for Students</title>
 
-        <p id="output">
-          Hey there! Welcome to amathzzz, your one-stop shop for mastering math
-          with the help of an awesome AI assistant! Whether you're a student
-          tackling tough equations or an adult brushing up on the basics,
-          amathzzz is here to guide you on your math journey. Let's get started!
-        </p>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Amathzzz is your smart AI math assistant. Ask math questions, get instant answers, and learn better with AI-powered support for all math topics." />
+  <meta name="keywords" content="Math Chatbot, AI Math Assistant, Amathzzz, Math Help, Ask Math Questions, STEM Chatbot, Math Homework Help" />
+  <meta name="author" content="STEM 12 - Nikola Tesla | SY 2023-2024" />
+
+  <!-- Open Graph Tags for social sharing -->
+  <meta property="og:title" content="Amathzzz | Your AI-Powered Math Assistant" />
+  <meta property="og:description" content="Get instant math help with Amathzzz, an AI chatbot designed to help students and math learners." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/assets/amathzzz-preview.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="home.html" aria-label="Go to Amathzzz Homepage">Amathzzz</a></h1>
+    <p>Your AI-powered math assistant. Helping you master math with ease.</p>
+  </header>
+
+  <aside class="side-bar">
+    <nav>
+      <button id="new"><a href="index.html">New Chat</a></button>
+      <div class="history" aria-label="Chat history"></div>
+      <div class="school-info">
+        <p>STEM 12 - Nikola Tesla</p>
+        <p>School Year 2023-2024</p>
       </div>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="chat-section">
+      <div class="input-container">
+        <label for="question" class="visually-hidden">Ask a math question</label>
+        <input id="question" type="text" placeholder="Ask Math Questions" />
+        <div id="submit" role="button" aria-label="Submit your question">➢</div>
+      </div>
+
+      <section class="info" aria-label="About Amathzzz">
+        <p>
+          Amathzzz 2024 Version. Created for research purposes. Our goal is to develop an AI assistant tool that helps students with math. 
+          <a href="home.html">Learn More About Us</a>
+        </p>
+      </section>
+
+      <section id="output" aria-live="polite">
+        <p>
+          Hey there! Welcome to Amathzzz, your one-stop shop for mastering math with the help of an awesome AI assistant! 
+          Whether you're a student tackling tough equations or an adult brushing up on the basics, Amathzzz is here to guide you on your math journey. Let's get started!
+        </p>
+      </section>
     </section>
-    <script type="importmap">
-      {
-        "imports": {
-          "@google/generative-ai": "https://esm.run/@google/generative-ai"
-        }
+  </main>
+
+  <!-- Import Google Generative AI -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
       }
-    </script>
-    <script src="index.js" type="module"></script>
-  </body>
+    }
+  </script>
+  <script src="index.js" type="module"></script>
+</body>
 </html>
